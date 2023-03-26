@@ -9,9 +9,57 @@
 </head>
 <style>
     *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Kumbh Sans', sans-serif;
+        scroll-behavior: smooth;
         background-color: cadetblue;
     }
-    
+    .navbar{
+        background-color: #13131313;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .icon{
+        display: flex;
+        font-size: 2rem;
+    }
+    .navbarmenu{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .navbar__item{
+        height: 80px;
+
+    }
+    .navbar__links{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 125px;
+        text-decoration: none;
+        height: 100%;
+    }
+
   
 </style>
 
@@ -21,10 +69,23 @@
             <a href="#home" class="icon">
             <img src="logo-IFRO-PNG.png" alt="logo Ifro">
             </a>
-            <a href="#" class="navbar-brand"> Home</a>
-            <a href="#" class="navbar-brand"> About us</a>
-            <a href="#" class="navbar-brand"> Cadastrar</a>
-        </div>
+            <div class="navbar__menu" id="mobile">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarmenu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#aboutus" class="navbar__links" id="about-page">Sobre nos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="form-page">Formulario</a>
+                </li>
+            </ul>
+           </div>
     </nav>
     
 
