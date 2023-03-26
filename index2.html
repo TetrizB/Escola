@@ -8,59 +8,27 @@
     <title>Document</title>
 </head>
 <style>
-    nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    *{
+        background-color: cadetblue;
     }
-
-    a {
-        display: inline-block;
-        padding: 10px;
-        color: black;
-        
-        font-style: normal;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    @media screen and (max-width: 900px){ 
-        a{
-            font-size: 4vw;
-        }
-    }
-    @media screen and (min-width: 500px){ 
-        a{
-            font-size: 2vw;
-        }
-    }
-
-    img {
-        
-        width: 70px;
-        padding-left: 15px;
-    }
-    .foto{
-        position: absolute;
-        background-size: cover;
-        background-position: right bottom, left top;
-        background-image: url(background.jpg);
-        background-repeat: no-repeat;
-    }
-    .texto{
-     
-    }
+    
   
 </style>
 
 <body>
-    <nav>
-
-        <a href="index2.html">Home</a>
-        <a href="index.html">Sobre Nós</a>
-        <a href="index3.html">Formulario</a>
-        <img src="logo-IFRO-PNG.png" alt="logo">
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="icon">
+            <img src="logo-IFRO-PNG.png" alt="logo Ifro">
+            </a>
+            <a href="#" class="navbar-brand"> Home</a>
+            <a href="#" class="navbar-brand"> About us</a>
+            <a href="#" class="navbar-brand"> Cadastrar</a>
+        </div>
     </nav>
+    
 
+    </div>
     <div class="foto">
           
     </div>
